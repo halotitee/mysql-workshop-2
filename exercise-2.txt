@@ -1,0 +1,3 @@
+Exercise 1
+    USE decodemtl_addressbook
+    SOURCE ~/mysql-workshop-2/data/import-table-structure.sql;
