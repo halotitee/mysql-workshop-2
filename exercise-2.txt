@@ -62,4 +62,6 @@ Exercise 9
 Exercise 10
     SELECT COUNT(*) FROM Entry WHERE birthday < '1982-02-12';
     SELECT COUNT(*) FROM Entry WHERE birthday > '1965-01-01';
-    SELECT * FROM Entry ORDER BY birthday DESC LIMIT 1;
+    SELECT MIN(birthday) FROM Entry;
+    
+    
