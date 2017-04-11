@@ -33,3 +33,7 @@ Exercise 4
 
 Exercise 5
     TRUNCATE TABLE Entry;
+    
+
+Exercise 6
+      DROP TABLE Account;
