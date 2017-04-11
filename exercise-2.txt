@@ -48,6 +48,18 @@ Exercise 7
     SOURCE ~/mysql-workshop-2/data/import-entry.sql
     
 Exercise 8
-    SELECT * FROM Account WHERE id = 63;
-    SELECT * FROM AddressBook WHERE accountid = 3;
+    SELECT * FROM Account WHERE id = 63;                
+    SELECT * FROM AddressBook WHERE accountid = 3;       
     SELECT * FROM AddressBook WHERE name = "Lorem Foundation";
+    
+
+Exercise 9
+    SELECT COUNT(*) FROM Account;                   -- 1000
+    SELECT COUNT(*) FROM AddressBook;               -- 1100
+    SELECT COUNT(*) FROM Entry;                     -- 4000
+    
+    
+Exercise 10
+    SELECT COUNT(*) FROM Entry WHERE birthday < '1982-02-12';
+    SELECT COUNT(*) FROM Entry WHERE birthday > '1965-01-01';
+    SELECT * FROM Entry ORDER BY birthday DESC LIMIT 1;
