@@ -68,4 +68,5 @@ Exercise 10
 Exercise 11
     SELECT COUNT(*) FROM Entry WHERE type <> 'other';
     SELECT COUNT(*) FROM Entry WHERE type = 'home' OR type = 'work';
+    SELECT COUNT(*) FROM Entry WHERE subtype = 'phone';
     
