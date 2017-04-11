@@ -47,4 +47,7 @@ Exercise 7
     SOURCE ~/mysql-workshop-2/data/import-addressbook.sql
     SOURCE ~/mysql-workshop-2/data/import-entry.sql
     
-    
+Exercise 8
+    SELECT * FROM Account WHERE id = 63;
+    SELECT * FROM AddressBook WHERE accountid = 3;
+    SELECT * FROM AddressBook WHERE name = "Lorem Foundation";
