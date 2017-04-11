@@ -11,8 +11,21 @@ Exercise 2
     -- copy & paste three lines from import-entry.sql
     INSERT INTO `Entry` (`addressBookId`,`firstName`,`lastName`,`birthday`,`type`,`subtype`,`contentLineOne`) VALUES (52,"Herrod","Conrad","1973-04-16 13:58:42","home","phone","(884) 661-8280"),(96,"Keane","Browning","1962-04-07 20:22:24","home","phone","(727) 361-3316"),(43,"Zoe","Jacobson","1955-01-26 17:54:47","home","phone","(702) 505-0434");
 
+
 Exercise 3
     SELECT * FROM Account;
     SELECT * FROM AddressBook;
     SELECT * FROM Entry;
+
     
+Exercise 4
+    DELETE FROM Account WHERE id BETWEEN 2 and 10;  
+    DELETE FROM AddressBook WHERE id BETWEEN 2 and 10;
+    DELETE FROM Entry WHERE id BETWEEN 4 and 30;   
+    UPDATE Entry
+    SET firstName = (case when addressBookId = 52 then 'Non'
+                          when addressBookId = 96 then 'Yumi'
+                          when addressBookId = 43 then 'Izzie'
+                    end),
+        subtype = 'cellphone'
+    WHERE id IN (1, 2, 3);
