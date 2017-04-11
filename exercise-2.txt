@@ -36,4 +36,15 @@ Exercise 5
     
 
 Exercise 6
-      DROP TABLE Account;
+    DROP TABLE Account;
+      
+      
+Exercise 7
+    USE decodemtl_addressbook_import;
+    SOURCE ~/mysql-workshop-2/data/import-table-structure.sql
+    
+    SOURCE ~/mysql-workshop-2/data/import-account.sql
+    SOURCE ~/mysql-workshop-2/data/import-addressbook.sql
+    SOURCE ~/mysql-workshop-2/data/import-entry.sql
+    
+    
